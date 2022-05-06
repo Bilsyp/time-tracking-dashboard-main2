@@ -22,7 +22,7 @@
 body {
   background-color: var(--Very-dark-blue);
   font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,7 @@ body {
 }
 .container {
   width: 90%;
+  padding: 20px;
   display: grid;
   gap: 40px;
   grid-template-columns: 1fr;
@@ -78,7 +79,7 @@ body {
   left: 0;
 }
 .cards {
-  background-color: var(--Light-red-work);
+  /* background-color: var(--Light-red-work); */
   border-radius: 20px;
   padding-bottom: 11rem;
   position: relative;
@@ -113,4 +114,58 @@ body {
   padding-top: 20px;
   color: var(--Desaturated-blue);
   font-size: 18px;
+}
+.work {
+  background-color: var(--Light-red-work);
+}
+.social {
+  background-color: var(--Violet-social);
+}
+.self-care {
+  background-color: var(--Soft-orange-self-care);
+}
+.play {
+  background-color: var(--Soft-blue-play);
+}
+.study {
+  background-color: var(--Light-red-study);
+}
+.exercise {
+  background-color: var(--Lime-green-exercise);
+}
+@media (min-width: 976px) {
+  .container {
+    max-width: 1440px;
+    grid-template-columns: 250px 2fr;
+  }
+  .main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+  .user {
+    height: 100%;
+  }
+  .user-content {
+    display: block;
+  }
+  .activity {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .cards {
+    padding-bottom: 14rem;
+  }
+  .card-activity {
+    padding-bottom: 4.5rem;
+  }
+  .last-activitys h3 {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+  }
+  .card-content h1 {
+    font-size: 3.5rem;
+  }
+  /* ! HAHAHAHAAHAHAHAHAAHAHAHAHAAAAAAAAAAAAAAAAAAAAAA*/
 }
