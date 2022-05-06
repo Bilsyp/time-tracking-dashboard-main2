@@ -1,4 +1,18 @@
 :root {
+  --Blue: hsl(246, 80%, 60%);
+  --Light-red-work: hsl(15, 100%, 70%);
+  --Soft-blue-play: hsl(195, 74%, 62%);
+  --Light-red-study: hsl(348, 100%, 68%);
+  --Lime-green-exercise: hsl(145, 58%, 55%);
+  --Violet-social: hsl(264, 64%, 52%);
+  --Soft-orange-self-care: hsl(43, 84%, 65%);
+
+  /* ### Neutral */
+
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(226, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
 }
 * {
   margin: 0;
@@ -6,4 +20,97 @@
   box-sizing: border-box;
 }
 body {
+  background-color: var(--Very-dark-blue);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: white;
+}
+.container {
+  width: 90%;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr;
+  /* border: 1px solid red; */
+}
+.user {
+  background-color: var(--Blue);
+  border-radius: 20px;
+  position: relative;
+  padding-top: 2rem;
+  padding-left: 2.5rem;
+  padding-bottom: 7rem;
+  overflow: hidden;
+}
+.user-content {
+  display: flex;
+  /* background-color: red; */
+}
+.user-content img {
+  width: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  height: 80px;
+  margin-right: 40px;
+}
+.username h2 {
+  font-weight: 300;
+  color: var(--Pale-Blue);
+}
+.username h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+.activity {
+  position: absolute;
+  background-color: var(--Dark-blue);
+  display: flex;
+  justify-content: space-between;
+  bottom: 0;
+  padding: 2rem 2rem;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 2.3rem;
+  color: var(--Desaturated-blue);
+  left: 0;
+}
+.cards {
+  background-color: var(--Light-red-work);
+  border-radius: 20px;
+  padding-bottom: 11rem;
+  position: relative;
+  overflow: hidden;
+}
+.card-img img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.card-activity {
+  background-color: var(--Dark-blue);
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border-radius: 20px;
+  bottom: 0;
+  display: flex;
+}
+.card-content h1 {
+  /* background: red; */
+  font-size: 2.5rem;
+  /* padding-top: 10px; */
+  font-weight: 200;
+}
+.last-activitys {
+  /* background: red;/ */
+  text-align: right;
+}
+.last-activitys h3 {
+  padding-top: 20px;
+  color: var(--Desaturated-blue);
+  font-size: 18px;
 }
