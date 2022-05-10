@@ -160,7 +160,7 @@ body {
 @media (min-width: 976px) {
   .container {
     max-width: 1440px;
-    grid-template-columns: 200px 2fr;
+    grid-template-columns: 230px 2fr;
   }
   .main-card {
 
